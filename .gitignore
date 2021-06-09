@@ -1,0 +1,12 @@
+/pkg/
+/bin/
+/Term/bin/
+/Study/bin/
+/Study/pkg/src/github.com/
+/Study/pkg/src/golang.org/
+/Study/src/github.com/
+/Study/src/golang.org/
+*.xml
+.idea/inspectionProfiles/Project_Default.xml
+*.xml
+.idea/8GoLangCodes.iml
