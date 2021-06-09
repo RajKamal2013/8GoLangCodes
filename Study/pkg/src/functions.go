@@ -1,7 +1,7 @@
 package main
 
 import (
-"fmt"
+	"fmt"
 )
 
 func unnamedMinMax(x, y int) (int, int) {
@@ -28,7 +28,7 @@ func minMax(x, y int) (min, max int) {
 }
 
 func namedMinMax(x, y int) (min, max int) {
-	if x > y  {
+	if x > y {
 		min = y
 		max = x
 	} else {
@@ -38,30 +38,28 @@ func namedMinMax(x, y int) (min, max int) {
 	return
 }
 
-func sort (x, y int)  (int, int) {
-	if x  > y {
+func sort(x, y int) (int, int) {
+	if x > y {
 		return y, x
-	} else  {
+	} else {
 		return x, y
 	}
 }
 
 func main() {
-	y:= 4
+	y := 4
 	square := func(s int) int {
 		return s * s
 	}
-	fmt.Println("The Square of ", y , "is ", square(y))
+	fmt.Println("The Square of ", y, "is ", square(y))
 
 	square = func(s int) int {
 		return s + s
 	}
 
-	fmt.Println("The Square of ", y , "is ", square(y))
+	fmt.Println("The Square of ", y, "is ", square(y))
 	fmt.Println(minMax(15, 6))
 	fmt.Println(namedMinMax(4, 10))
 	min, max := namedMinMax(4, 10)
 	fmt.Println(min, max)
 }
-
-

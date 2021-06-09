@@ -1,15 +1,14 @@
 package main
 
 import (
-"fmt"
+	"fmt"
 )
 
 func change(x []int) {
 	x[3] = -2
 }
 
-
-func printSlice (x []int) {
+func printSlice(x []int) {
 	for _, number := range x {
 		fmt.Printf("%d ", number)
 	}
@@ -31,4 +30,3 @@ func main() {
 	fmt.Printf("New Slice with all zeros ")
 	printSlice(anotherSlice)
 }
-

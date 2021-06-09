@@ -1,7 +1,7 @@
 package main
 
 import (
-"fmt"
+	"fmt"
 )
 
 type coordinates interface {
@@ -10,7 +10,7 @@ type coordinates interface {
 }
 
 func findCoordinates(a coordinates) {
-	fmt.Println("X: ", a.xaxis(),  "Y: ", a.yaxis())
+	fmt.Println("X: ", a.xaxis(), "Y: ", a.yaxis())
 }
 
 type point2D struct {
@@ -37,10 +37,10 @@ func (s coordinate) yaxis() int {
 }
 
 func main() {
-	x := point2D { X:-1, Y:12}
+	x := point2D{X: -1, Y: 12}
 	fmt.Println(x)
 	findCoordinates(x)
 
-	y:=coordinate(10)
+	y := coordinate(10)
 	findCoordinates(y)
 }

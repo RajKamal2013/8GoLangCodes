@@ -1,8 +1,8 @@
 package main
 
 import (
-"fmt"
-"strconv"
+	"fmt"
+	"strconv"
 )
 
 func main() {
@@ -16,7 +16,7 @@ func main() {
 	aMap["Sat"] = 5
 	aMap["Sun"] = 6
 
-	fmt.Printf ("Sunday is the %d day of week \n", aMap["Sun"])
+	fmt.Printf("Sunday is the %d day of week \n", aMap["Sun"])
 
 	_, ok := aMap["Tuesday"]
 
@@ -44,12 +44,12 @@ func main() {
 	}
 	fmt.Printf("The Map has %d elements \n", count)
 
-	anotherMap := map[string] int {
-		"one" : 1, 
-		"Two" : 2,
-		"Three" : 3,
-		"Four" :4,
-		"Five" :5,
+	anotherMap := map[string]int{
+		"one":   1,
+		"Two":   2,
+		"Three": 3,
+		"Four":  4,
+		"Five":  5,
 	}
 	anotherMap["Six"] = 6
 	count = 0
@@ -60,10 +60,10 @@ func main() {
 	}
 	fmt.Printf("The AnotherMap has %d elements \n", count)
 
-	newMap := make(map[string] int)
+	newMap := make(map[string]int)
 	length := len(anArray)
 
-	for i:= 0; i < length;  i++ {
+	for i := 0; i < length; i++ {
 		fmt.Printf("%s ", strconv.Itoa(i))
 		newMap[strconv.Itoa(i)] = anArray[i]
 	}
@@ -72,5 +72,3 @@ func main() {
 		fmt.Printf("Key : %s Value : %d \n", key, value)
 	}
 }
-
-
